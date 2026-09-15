@@ -1,0 +1,201 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "sin errores JS en carga",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sin longtasks (>50ms) durante la intro de la portada",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "lámina de la portada dibujada por completo",
+      "pass": true,
+      "detail": "52/52"
+    },
+    {
+      "name": "etiquetas de la lámina visibles tras el dibujo",
+      "pass": true,
+      "detail": "opacity=1"
+    },
+    {
+      "name": "nombre en portada revelado (char-reveal completado)",
+      "pass": true
+    },
+    {
+      "name": "aviso de cookies visible en primera visita",
+      "pass": true
+    },
+    {
+      "name": "botón \"Entendido\" oculta el aviso (display:none real)",
+      "pass": true,
+      "detail": "display=none"
+    },
+    {
+      "name": "aviso de cookies recordado tras recargar",
+      "pass": true
+    },
+    {
+      "name": "CTAs de portada y cabecera reciben el clic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mapa sin iframe antes del clic",
+      "pass": true
+    },
+    {
+      "name": "mapa cargado tras el clic (google.com/maps?q=…&output=embed)",
+      "pass": true,
+      "detail": "https://www.google.com/maps?q=Nando%20Mui%C3%B1o%20Fisioterapia%20e%20Osteopat%C3%ADa%2C%20R%C3%BAa%20Vila%20de%20Ordes%2C%2023%2C%2015100%20Carballo%2C%20A%20Coru%C3%B1a&output=embed"
+    },
+    {
+      "name": "sin longtasks (>50ms) durante el scroll completo",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "sin errores JS tras el scroll",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sin scroll horizontal a 1440 px",
+      "pass": true,
+      "detail": "scrollWidth=1440"
+    },
+    {
+      "name": "láminas al margen dibujadas tras pasar por ellas",
+      "pass": true,
+      "detail": "17/17"
+    },
+    {
+      "name": "horario: las 5 barras pintadas (scaleX 1)",
+      "pass": true,
+      "detail": "1.00/1.00/1.00/1.00/1.00"
+    },
+    {
+      "name": "horario: flecha 8:00 → 22:00 dibujada",
+      "pass": true,
+      "detail": "0/0"
+    },
+    {
+      "name": "sesión: línea de la timeline trazada",
+      "pass": true,
+      "detail": "--line=1"
+    },
+    {
+      "name": "sticky stack: la lámina activa cambia con la tarjeta (0 → 3)",
+      "pass": true,
+      "detail": "0 -> 3"
+    },
+    {
+      "name": "sticky stack: la lámina activa se dibuja por completo",
+      "pass": true,
+      "detail": "25/25"
+    },
+    {
+      "name": "sticky stack: tarjetas anteriores marcadas como pasadas",
+      "pass": true,
+      "detail": "is-past=3"
+    },
+    {
+      "name": "sticky stack: la figura es sticky",
+      "pass": true,
+      "detail": "sticky"
+    },
+    {
+      "name": "reduced-motion: clase is-reduced y sin Lenis",
+      "pass": true,
+      "detail": "{\"reduced\":true,\"lenis\":false,\"dash\":true,\"lbl\":true,\"title\":true,\"reveals\":true,\"fills\":true}"
+    },
+    {
+      "name": "reduced-motion: láminas ya dibujadas y etiquetadas",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion: nombre, textos y barras visibles sin animación",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion: sin errores JS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sin JS: contenido, láminas y mapa placeholder visibles",
+      "pass": true,
+      "detail": "{\"nojs\":true,\"title\":true,\"plate\":true,\"lbl\":true,\"map\":true,\"fallback\":true,\"reveals\":true}"
+    },
+    {
+      "name": "sin scroll horizontal a 400 px",
+      "pass": true,
+      "detail": "scrollWidth=400"
+    },
+    {
+      "name": "sin errores JS a 400 px",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "móvil: el menú se abre",
+      "pass": true
+    },
+    {
+      "name": "móvil: al elegir una sección el menú se cierra y navega",
+      "pass": true
+    },
+    {
+      "name": "móvil: botón flotante de llamada presente",
+      "pass": true
+    },
+    {
+      "name": "móvil: la figura de tratamientos sigue siendo sticky",
+      "pass": true,
+      "detail": "sticky"
+    },
+    {
+      "name": "sin scroll horizontal a 360 px",
+      "pass": true,
+      "detail": "scrollWidth=360"
+    },
+    {
+      "name": "sin errores JS a 360 px",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "longtasks": {
+    "load": [
+      {
+        "d": 113,
+        "t": 149
+      }
+    ],
+    "hero": [],
+    "scroll": []
+  },
+  "screenshots": [
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-inicio.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-manifiesto.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-osteopatia.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-tratamientos.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-sesion.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-horario.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-resenas.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-contacto.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\desktop-site-footer.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-inicio.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-manifiesto.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-osteopatia.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-tratamientos.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-sesion.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-horario.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-resenas.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-contacto.png",
+    "C:\\Users\\alvar\\Desktop\\WEBS NEGOCIOS\\nando-muino-fisioterapia-carballo-web\\screenshots\\mobile-site-footer.png"
+  ]
+}
