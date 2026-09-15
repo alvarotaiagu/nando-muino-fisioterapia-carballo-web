@@ -562,7 +562,11 @@ html:not(.no-js):not(.is-reduced) .h-fill { transform: scaleX(0); }
 
 /* ---------- 06 reseñas ---------- */
 .resenas-head { margin-bottom: 3rem; }
-.resenas-nota { font-size: clamp(2.2rem, 5vw, 4.2rem); margin-bottom: 1rem; }
+.resenas-nota { font-size: clamp(3.4rem, 9vw, 7.5rem); margin-bottom: .75rem; display: flex; align-items: baseline; gap: .25em; flex-wrap: wrap; font-weight: 300; }
+.resenas-num { font-variant-numeric: tabular-nums; }
+.resenas-stars { color: var(--arcilla); font-size: .34em; letter-spacing: .12em; }
+.resenas-total { color: var(--tinta); font-size: 1.15em; }
+.hero-rating { color: var(--arcilla); }
 .resenas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .resena {
   margin: 0;

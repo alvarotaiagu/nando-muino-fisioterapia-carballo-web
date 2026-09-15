@@ -13,7 +13,7 @@ Sitio estático sin build: `index.html` + `css/style.css` + `js/main.js`. GSAP 3
 5. **03 — Tratamientos**: sticky stack con la **lámina cambiando por tarjeta** (mano, columna, tórax/diafragma, cráneo, rodilla, músculo con aguja, hombro con vendaje). Cada lámina se redibuja al activarse; las tarjetas pasadas se atenúan. En móvil la figura queda sticky bajo la cabecera.
 6. **04 — Cómo es una sesión**: timeline de 4 pasos con la línea trazándose con el scroll (horizontal en escritorio, vertical en móvil) y dos fotos.
 7. **05 — Horario** (bloque sepia): "8:00 → 22:00" como titular con la flecha dibujándose, y una tabla-gráfica L–D con barras sobre un eje 6:00–24:00 que se pintan al entrar. Chip "abierto ahora" con hora de Europe/Madrid.
-8. **06 — Reseñas**: tres reseñas reales de Google (capturas enviadas por el cliente el 2026-09-15) con nombre abreviado a petición suya; valoración media y nº de reseñas siguen pendientes.
+8. **06 — Reseñas**: tres reseñas reales de Google (capturas enviadas por el cliente el 2026-09-15) con nombre abreviado a petición suya; contador animado 5,0 · 38 reseñas.
 9. **07 — Contacto**: datos, mapa de Google por consentimiento (`.map-consent`, sin API key), IG/FB.
 
 Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 bytes), fijo, `mix-blend-mode: multiply`, sin eventos.
@@ -21,6 +21,7 @@ Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 
 ## Datos reales usados
 
 - Nombre, dirección (Rúa Vila de Ordes, 23, bajo, 15100 Carballo), teléfono 698 11 16 68, horario (L–J 8:00–22:00, V 8:00–14:00, S–D cerrado), Facebook e Instagram: facilitados por el cliente.
+- Valoración de Google: **5,0 con 38 reseñas** (dato facilitado por el cliente el 2026-09-15), en la sección de reseñas, la línea de la portada, la meta description y el `aggregateRating` del schema.
 - Email `nando.fisioterapianm@gmail.com`: aparece en la tarjeta/logo original que envió el cliente; en la web va marcado `[CONFIRMAR]`.
 
 ## Pendiente (placeholders marcados en la web con `.pendiente`)
@@ -28,7 +29,6 @@ Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 
 - Texto del manifiesto (hay un borrador orientativo en plural marcado como tal).
 - Lista definitiva de tratamientos (la actual son categorías genéricas del sector, marcada `[CONFIRMAR CON EL PROFESIONAL]`).
 - Precio y duración de la sesión.
-- Valoración media de Google y nº de reseñas (las tres reseñas ya son reales).
 - Equipo: apellidos, titulaciones y nº de colegiado de cada profesional; confirmar que Diego y Leticia (nombrados en las reseñas) siguen en el equipo y si hay más personas.
 - Nº de colegiado, titulación y colegio profesional; NIF y registro sanitario (aviso legal).
 - Sistema de cita online, si lo hay.

@@ -200,6 +200,7 @@
     document.querySelectorAll(".timeline").forEach((t) => t.style.setProperty("--line", 1));
     document.querySelectorAll(".h-fill").forEach((b) => { b.style.transform = "none"; });
     document.querySelectorAll(".h-arrow path").forEach((p) => { p.style.strokeDashoffset = 0; });
+    document.querySelectorAll("[data-count]").forEach((el) => { el.textContent = el.dataset.count; });
     return;
   }
 
@@ -335,6 +336,19 @@
       onEnter: () => gsap.to(fills, { scaleX: 1, duration: 1.2, ease: "power2.out", stagger: 0.12 }),
     });
   }
+
+  /* ---------- Contadores (5,0 · 38 reseñas) ---------- */
+  document.querySelectorAll("[data-count]").forEach((el) => {
+    const raw = String(el.dataset.count);
+    const target = parseFloat(raw.replace(",", "."));
+    const decimals = (raw.split(",")[1] || "").length;
+    const obj = { v: 0 };
+    el.textContent = (0).toFixed(decimals).replace(".", ",");
+    ScrollTrigger.create({
+      trigger: el, start: "top 88%", once: true,
+      onEnter: () => gsap.to(obj, { v: target, duration: 1.6, ease: "power2.out", onUpdate: () => { el.textContent = obj.v.toFixed(decimals).replace(".", ","); } }),
+    });
+  });
 
   /* ---------- Botones magnéticos (solo puntero fino) ---------- */
   if (finePointer) {

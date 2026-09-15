@@ -68,6 +68,11 @@
       "detail": "scrollWidth=1440"
     },
     {
+      "name": "reseñas: contadores en sus valores (5,0 / 38)",
+      "pass": true,
+      "detail": "5,0/38"
+    },
+    {
       "name": "láminas al margen dibujadas tras pasar por ellas",
       "pass": true,
       "detail": "17/17"
@@ -108,9 +113,13 @@
       "detail": "sticky"
     },
     {
+      "name": "reduced-motion: contadores en su valor final",
+      "pass": true
+    },
+    {
       "name": "reduced-motion: clase is-reduced y sin Lenis",
       "pass": true,
-      "detail": "{\"reduced\":true,\"lenis\":false,\"dash\":true,\"lbl\":true,\"title\":true,\"reveals\":true,\"fills\":true}"
+      "detail": "{\"reduced\":true,\"lenis\":false,\"dash\":true,\"lbl\":true,\"title\":true,\"reveals\":true,\"fills\":true,\"counts\":true}"
     },
     {
       "name": "reduced-motion: láminas ya dibujadas y etiquetadas",
@@ -171,12 +180,16 @@
   "longtasks": {
     "load": [
       {
-        "d": 138,
-        "t": 135
+        "d": 125,
+        "t": 126
       },
       {
-        "d": 51,
-        "t": 491
+        "d": 50,
+        "t": 257
+      },
+      {
+        "d": 60,
+        "t": 367
       }
     ],
     "hero": [],

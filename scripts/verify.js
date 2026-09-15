@@ -112,6 +112,10 @@ const drawnCount = (page, sel) => page.evaluate((s) => {
   const sw = await page.evaluate(() => document.documentElement.scrollWidth);
   check('sin scroll horizontal a 1440 px', sw <= 1440, `scrollWidth=${sw}`);
 
+  // --- contadores de reseñas ---
+  const counters = await page.evaluate(() => [...document.querySelectorAll('[data-count]')].map((e) => e.textContent.trim()));
+  check('reseñas: contadores en sus valores (5,0 / 38)', counters.join('/') === '5,0/38', counters.join('/'));
+
   // --- láminas al margen dibujadas tras el scroll ---
   const [mTot, mDr] = await drawnCount(page, '.inline-plate, .margin-plate');
   check('láminas al margen dibujadas tras pasar por ellas', mTot > 0 && mDr === mTot, `${mDr}/${mTot}`);
@@ -163,7 +167,9 @@ const drawnCount = (page, sel) => page.evaluate((s) => {
     title: getComputedStyle(document.querySelector('.hero-title')).opacity === '1' && !document.querySelector('.hero-title .c'),
     reveals: [...document.querySelectorAll('.reveal-up')].every((el) => getComputedStyle(el).opacity === '1'),
     fills: [...document.querySelectorAll('.h-fill')].every((f) => new DOMMatrixReadOnly(getComputedStyle(f).transform).a > 0.99),
+    counts: [...document.querySelectorAll('[data-count]')].map((e) => e.textContent.trim()).join('/') === '5,0/38',
   }));
+  check('reduced-motion: contadores en su valor final', rm.counts);
   check('reduced-motion: clase is-reduced y sin Lenis', rm.reduced && !rm.lenis, JSON.stringify(rm));
   check('reduced-motion: láminas ya dibujadas y etiquetadas', rm.dash && rm.lbl);
   check('reduced-motion: nombre, textos y barras visibles sin animación', rm.title && rm.reveals && rm.fills);
