@@ -13,7 +13,7 @@ Sitio estático sin build: `index.html` + `css/style.css` + `js/main.js`. GSAP 3
 5. **03 — Tratamientos**: sticky stack con la **lámina cambiando por tarjeta** (mano, columna, tórax/diafragma, cráneo, rodilla, músculo con aguja, hombro con vendaje). Cada lámina se redibuja al activarse; las tarjetas pasadas se atenúan. En móvil la figura queda sticky bajo la cabecera.
 6. **04 — Cómo es una sesión**: timeline de 4 pasos con la línea trazándose con el scroll (horizontal en escritorio, vertical en móvil) y dos fotos.
 7. **05 — Horario** (bloque sepia): "8:00 → 22:00" como titular con la flecha dibujándose, y una tabla-gráfica L–D con barras sobre un eje 6:00–24:00 que se pintan al entrar. Chip "abierto ahora" con hora de Europe/Madrid.
-8. **06 — Reseñas**: `[VALORACIÓN GOOGLE PENDIENTE]` y tres tarjetas de muestra.
+8. **06 — Reseñas**: tres reseñas reales de Google (capturas enviadas por el cliente el 2026-09-15) con nombre abreviado a petición suya; valoración media y nº de reseñas siguen pendientes.
 9. **07 — Contacto**: datos, mapa de Google por consentimiento (`.map-consent`, sin API key), IG/FB.
 
 Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 bytes), fijo, `mix-blend-mode: multiply`, sin eventos.
@@ -28,11 +28,16 @@ Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 
 - Texto del manifiesto en primera persona (hay un borrador orientativo marcado como tal).
 - Lista definitiva de tratamientos (la actual son categorías genéricas del sector, marcada `[CONFIRMAR CON EL PROFESIONAL]`).
 - Precio y duración de la sesión.
-- Valoración de Google, nº de reseñas y reseñas reales.
+- Valoración media de Google y nº de reseñas (las tres reseñas ya son reales).
+- **Confirmar que las reseñas son de la ficha de Nando**: hablan de "equipo" y "clínica" y nombran a Diego y Leticia, lo que no encaja con un profesional individual. Si hay más profesionales, la web debería reflejarlo.
 - Nº de colegiado, titulación y colegio profesional; NIF y registro sanitario (aviso legal).
 - Sistema de cita online, si lo hay.
 - Foto real del profesional (el retrato actual es de ambiente y está marcado como provisional).
 - Aprobación del logo rediseñado y de los colores de marca.
+
+## Reseñas
+
+Transcritas casi literalmente de las capturas: se quitaron emojis, el saludo inicial "Hola equipo" y la firma de la tercera, se corrigió la ortografía ("anticap" → "handicap", mayúsculas) y se abreviaron los apellidos a la inicial (José Manuel A., Irene F., Carmen G.). Las fechas relativas ("hace 4 meses", "hace un año") son las de las capturas.
 
 ## Logo
 

@@ -568,6 +568,7 @@ html:not(.no-js):not(.is-reduced) .h-fill { transform: scaleX(0); }
 .resena-stars { color: var(--arcilla); letter-spacing: .15em; margin: 0; }
 .resena-txt { font-family: var(--serif); font-size: 1.25rem; font-variation-settings: "opsz" 24, "SOFT" 20, "WONK" 1; line-height: 1.4; margin: 0; flex: 1; }
 .resena footer { color: var(--tinta-3); }
+.resenas-aviso { margin: 2rem 0 0; max-width: 64ch; color: var(--tinta-2); font-size: .95rem; }
 
 /* ---------- 07 contacto ---------- */
 .contacto { background: var(--hueso-2); }
