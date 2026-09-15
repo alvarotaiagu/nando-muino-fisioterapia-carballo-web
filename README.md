@@ -13,7 +13,7 @@ Sitio estático sin build: `index.html` + `css/style.css` + `js/main.js`. GSAP 3
 5. **03 — Tratamientos**: sticky stack con la **lámina cambiando por tarjeta** (mano, columna, tórax/diafragma, cráneo, rodilla, músculo con aguja, hombro con vendaje). Cada lámina se redibuja al activarse; las tarjetas pasadas se atenúan. En móvil la figura queda sticky bajo la cabecera.
 6. **04 — Cómo es una sesión**: timeline de 4 pasos con la línea trazándose con el scroll (horizontal en escritorio, vertical en móvil) y dos fotos.
 7. **05 — Horario** (bloque sepia): "8:00 → 22:00" como titular con la flecha dibujándose, y una tabla-gráfica L–D con barras sobre un eje 6:00–24:00 que se pintan al entrar. Chip "abierto ahora" con hora de Europe/Madrid.
-8. **06 — Reseñas**: tres reseñas reales de Google (capturas enviadas por el cliente el 2026-09-15) con nombre abreviado a petición suya; contador animado 5,0 · 38 reseñas.
+8. **06 — Reseñas**: tres reseñas reales de Google (capturas enviadas por el cliente el 2026-09-15) con apellidos abreviados a la inicial a petición suya (sin indicarlo en la web); contador animado 5,0 · 38 reseñas.
 9. **07 — Contacto**: datos, mapa de Google por consentimiento (`.map-consent`, sin API key), IG/FB.
 
 Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 bytes), fijo, `mix-blend-mode: multiply`, sin eventos.
@@ -49,7 +49,7 @@ Generadas por `scripts/generate_plates.py` (Python, sin dependencias): columna (
 
 ## Fotografía
 
-El brief pedía fotografía generada; en este entorno no hay herramienta de generación de imagen, así que se usaron fotos con licencia Pexels (uso comercial libre) elegidas para el concepto y gradadas por script (`scripts/process_photos.py`): balance de blancos, supresión de azules/cian, saturación contenida, sombras viradas a sepia y luces a crema, grano fino. Ninguna es de la consulta real; la web las etiqueta como "fotografía de ambiente".
+El brief pedía fotografía generada; en este entorno no hay herramienta de generación de imagen, así que se usaron fotos con licencia Pexels (uso comercial libre) elegidas para el concepto y gradadas por script (`scripts/process_photos.py`): balance de blancos, supresión de azules/cian, saturación contenida, sombras viradas a sepia y luces a crema, grano fino. Ninguna es de la consulta real (a petición del cliente, la web ya no las etiqueta como "fotografía de ambiente"; solo el retrato lleva el aviso de provisional).
 
 | Archivo | Pexels | Uso |
 |---|---|---|
