@@ -1,6 +1,6 @@
 # Nando Muiño · Fisioterapia y Osteopatía · Carballo
 
-Web de marca personal para Nando Muiño, fisioterapeuta y osteópata en Rúa Vila de Ordes, 23, Carballo. Concepto **"Manos y anatomía"**: el osteópata como artesano del cuerpo. Taller, no clínica. Hueso, tinta sepia, arcilla y oliva; cero azul sanitario. Es la única plantilla de salud de la carpeta sin azul/teal y la única de marca personal.
+Web para Nando Muiño · Fisioterapia y Osteopatía, consulta de fisioterapia y osteopatía en Rúa Vila de Ordes, 23, Carballo. La marca es el nombre de Nando, pero el cliente confirmó (2026-09-15) que trabaja un **equipo**: la voz de la web es plural y hay un bloque de equipo. Concepto **"Manos y anatomía"**: el osteópata como artesano del cuerpo. Taller, no clínica. Hueso, tinta sepia, arcilla y oliva; cero azul sanitario. Es la única plantilla de salud de la carpeta sin azul/teal y la única con nombre propio como marca.
 
 Sitio estático sin build: `index.html` + `css/style.css` + `js/main.js`. GSAP 3.15 + ScrollTrigger y Lenis 1.3 desde CDN, tipografías Fraunces + Inter desde Google Fonts.
 
@@ -8,7 +8,7 @@ Sitio estático sin build: `index.html` + `css/style.css` + `js/main.js`. GSAP 3
 
 1. **Portada**: nombre enorme en Fraunces (opsz 144) con char-reveal lento, "Fisioterapia · Osteopatía" en itálica, línea small caps "Carballo · L–J 8:00–22:00", CTA "Pedir cita" en arcilla y magnético. A la derecha, la **Lámina I: columna vertebral** (SVG de línea generado) que se dibuja con `stroke-dashoffset` al cargar; las etiquetas de atlas aparecen al terminar. Sin canvas, sin shaders.
 2. **Marquee** lento con las especialidades en itálica (empuje suave con la velocidad de scroll, nunca cambia de sentido).
-3. **01 — Manifiesto**: "Escucho, *exploro*, ajusto." sticky a la izquierda con la Lámina II (mano) debajo, dibujándose con el scroll; a la derecha texto en primera persona (placeholder marcado), tres principios y dos fotos con parallax.
+3. **01 — Manifiesto**: "Escuchamos, *exploramos*, ajustamos." sticky a la izquierda con la Lámina II (mano) debajo, dibujándose con el scroll; a la derecha texto en primera persona del plural (placeholder marcado), tres principios, el bloque de equipo (Nando + Diego + Leticia, pendientes de confirmar) y dos fotos con parallax.
 4. **02 — Osteopatía vs fisioterapia**: dos columnas (bloque sepia / bloque papel) con qué es cada una y "cuándo elegirla"; Lámina III (pelvis) en el margen.
 5. **03 — Tratamientos**: sticky stack con la **lámina cambiando por tarjeta** (mano, columna, tórax/diafragma, cráneo, rodilla, músculo con aguja, hombro con vendaje). Cada lámina se redibuja al activarse; las tarjetas pasadas se atenúan. En móvil la figura queda sticky bajo la cabecera.
 6. **04 — Cómo es una sesión**: timeline de 4 pasos con la línea trazándose con el scroll (horizontal en escritorio, vertical en móvil) y dos fotos.
@@ -25,14 +25,14 @@ Papel con grano: `body::before` con un SVG `feTurbulence` en data URI (unos 400 
 
 ## Pendiente (placeholders marcados en la web con `.pendiente`)
 
-- Texto del manifiesto en primera persona (hay un borrador orientativo marcado como tal).
+- Texto del manifiesto (hay un borrador orientativo en plural marcado como tal).
 - Lista definitiva de tratamientos (la actual son categorías genéricas del sector, marcada `[CONFIRMAR CON EL PROFESIONAL]`).
 - Precio y duración de la sesión.
 - Valoración media de Google y nº de reseñas (las tres reseñas ya son reales).
-- **Confirmar que las reseñas son de la ficha de Nando**: hablan de "equipo" y "clínica" y nombran a Diego y Leticia, lo que no encaja con un profesional individual. Si hay más profesionales, la web debería reflejarlo.
+- Equipo: apellidos, titulaciones y nº de colegiado de cada profesional; confirmar que Diego y Leticia (nombrados en las reseñas) siguen en el equipo y si hay más personas.
 - Nº de colegiado, titulación y colegio profesional; NIF y registro sanitario (aviso legal).
 - Sistema de cita online, si lo hay.
-- Foto real del profesional (el retrato actual es de ambiente y está marcado como provisional).
+- Foto real del equipo (el retrato actual es de ambiente y está marcado como provisional).
 - Aprobación del logo rediseñado y de los colores de marca.
 
 ## Reseñas

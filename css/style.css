@@ -397,6 +397,13 @@ section { position: relative; padding-block: clamp(5rem, 10vw, 9rem); }
 }
 .mani-principios strong { font-family: var(--serif); font-weight: 400; font-size: 1.35rem; font-variation-settings: "opsz" 48, "SOFT" 0, "WONK" 1; }
 .mani-principios li > span:last-child { color: var(--tinta-2); }
+.equipo { margin: 0 0 3rem; }
+.equipo-lista { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.25rem 0 1rem; }
+.equipo-lista li { display: grid; gap: .35rem; padding: 1.25rem; background: var(--papel); border: 1px solid var(--linea); border-radius: 6px; align-content: start; }
+.equipo-inicial { width: 2.8rem; height: 2.8rem; border-radius: 50%; display: grid; place-items: center; background: var(--tinta); color: var(--hueso); font-size: 1.5rem; margin-bottom: .5rem; }
+.equipo-lista strong { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; font-variation-settings: "opsz" 48, "SOFT" 0, "WONK" 1; }
+.equipo-lista li > span:last-child { color: var(--tinta-2); font-size: .95rem; }
+.equipo-nota { color: var(--tinta-3); font-size: .9rem; max-width: 60ch; margin: 0; }
 .mani-fotos { display: grid; grid-template-columns: 1.2fr .9fr; gap: 1.25rem; align-items: end; }
 .foto-retrato { aspect-ratio: 3 / 4; }
 .foto-espalda { aspect-ratio: 3 / 4; margin-bottom: 3rem; }
@@ -664,7 +671,7 @@ html:not(.no-js):not(.is-reduced) .hero-anim { opacity: 0; }
   .timeline::before { top: 0; bottom: 0; left: .34rem; right: auto; width: 1px; height: auto; transform-origin: top; }
   html:not(.no-js):not(.is-reduced) .timeline::before { transform: scaleY(var(--line, 0)); }
   .step::before { top: .4rem; left: -1.75rem; transform: none; }
-  .resenas-grid { grid-template-columns: 1fr; }
+  .resenas-grid, .equipo-lista { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .h-ticks { display: none; }
   .h-row { grid-template-columns: 5.4rem 1fr; grid-template-rows: auto auto; row-gap: .2rem; }
