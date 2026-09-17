@@ -210,7 +210,7 @@ def plate_mano():
         tips.append((px, py))
     lbls = ""
     lbls += label(322, 300, "Falanges", 268, 304)
-    lbls += label(330, 410, "Metacarpo", 286, 406)
+    lbls += label(330, 410, "Metacarpo", 276, 404)
     lbls += label(330, 476, "Carpo", 262, 470)
     lbls += label(90, 540, "Radio", 156, 536, anchor="end")
     body = '<g class="ink">' + "".join(out) + "</g>" + lbls
@@ -275,7 +275,7 @@ def plate_craneo():
     lbls += label(330, 40, "Parietal", 300, 62)
     lbls += label(436, 300, "Occipital", 400, 296)
     lbls += label(80, 420, "Mandíbula", 176, 400, anchor="end")
-    lbls += label(330, 440, "Cigomático", 250, 272)
+    lbls += label(246, 440, "Arco cigomático", 236, 272)
     body = '<g class="ink">' + "".join(out) + "</g>" + lbls
     return svg("craneo", (W, H), body, "Cráneo, vista lateral")
 
@@ -303,7 +303,7 @@ def plate_torax():
     out.append(P("M104,352 C150,286 310,286 356,352", cls="ln ln-dash"))
     lbls = ""
     lbls += label(400, 96, "Clavícula", 352, 66)
-    lbls += label(150, 220, "Esternón", 216, 214, anchor="end")
+    lbls += label(232, 36, "Esternón", 230, 82)
     lbls += label(392, 260, "Costilla", 336, 250)
     lbls += label(392, 346, "Diafragma", 340, 336)
     body = '<g class="ink">' + "".join(out) + "</g>" + lbls
@@ -395,7 +395,8 @@ def plate_pelvis():
              f"C{X(300)},344 {X(270)},334 {X(262)},318 L{X(262)},300 C{X(268)},296 {X(276)},294 {X(282)},294 "
              f"C{X(300)},280 {X(322)},264 {X(348)},262 C{X(360)},238 {X(346)},218 {X(324)},208 C{X(300)},198 {X(272)},204 {X(262)},214")
         out.append(P(d))
-        out.append(P(f"M{X(298)},304 a22,15 0 1 0 44,0 a22,15 0 1 0 -44,0", extra=f' transform="rotate({-22 * sgn} {X(320)} 304)"'))
+        ocx = 240 + sgn * 80
+        out.append(P(f"M{f(ocx - 22)},304 a22,15 0 1 0 44,0 a22,15 0 1 0 -44,0", extra=f' transform="rotate({-22 * sgn} {f(ocx)} 304)"'))
         out.append(P(f"M{X(372)},246 C{X(392)},236 {X(412)},246 {X(418)},266 C{X(422)},284 {X(410)},300 {X(392)},304", cls="ln ln-thin ln-dash"))
     out.append(P("M236,318 L244,318 M236,326 L244,326", cls="ln ln-thin"))
     lbls = ""
